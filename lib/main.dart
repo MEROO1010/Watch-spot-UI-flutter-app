@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
+import 'package:watch_spot/Screens/LuxuryWatches.dart';
 import 'package:watch_spot/Screens/explore.dart';
+import 'package:watch_spot/Screens/order.dart';
 import 'package:watch_spot/Screens/smart_watches.dart';
+
+import 'Screens/details.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -10,6 +14,9 @@ void main() {
       '/': (context) => GetStart(),
       '/explore': (context) => Explore(),
       '/smart_watches': (context) => smartWatches(),
+      '/Luxury Watches': (context) => luxury_watches(),
+      '/details': (context) => details(),
+      '/order': (context) => Order(),
     },
   ));
 }

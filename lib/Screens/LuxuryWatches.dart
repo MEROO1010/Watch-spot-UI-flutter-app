@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:watch_spot/Screens/details.dart';
 import 'package:watch_spot/Screens/explore.dart';
 
-class smartWatches extends StatefulWidget {
-  const smartWatches({super.key});
+class luxury_watches extends StatefulWidget {
+  const luxury_watches({super.key});
 
   @override
-  State<smartWatches> createState() => _smartWatchesState();
+  State<luxury_watches> createState() => _luxury_watchesState();
 }
 
-class _smartWatchesState extends State<smartWatches> {
+class _luxury_watchesState extends State<luxury_watches> {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -49,36 +48,31 @@ class _smartWatchesState extends State<smartWatches> {
                         MaterialPageRoute(builder: (context) => Explore()),
                       );
                     },
-                    child: Image.asset('assets/images/text_smart_watches.png'),
-                  ),
-                ),
-                Container(
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => details()),
-                      );
-                    },
-                    child: Image.asset("assets/images/smart-watch-1.png"),
+                    child: Image.asset('assets/images/text_luxury_watches.png'),
                   ),
                 ),
                 Container(
                   child: TextButton(
                     onPressed: () {},
-                    child: Image.asset("assets/images/smart-watch-2.png"),
+                    child: Image.asset("assets/images/luxury_Watches_1.png"),
                   ),
                 ),
                 Container(
                   child: TextButton(
                     onPressed: () {},
-                    child: Image.asset("assets/images/smart-watch-3.png"),
+                    child: Image.asset("assets/images/luxury_Watches_2.png"),
                   ),
                 ),
                 Container(
                   child: TextButton(
                     onPressed: () {},
-                    child: Image.asset("assets/images/smart-watch-4.png"),
+                    child: Image.asset("assets/images/luxury_Watches_3.png"),
+                  ),
+                ),
+                Container(
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Image.asset("assets/images/luxury_Watches_4.png"),
                   ),
                 )
               ],

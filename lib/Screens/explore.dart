@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watch_spot/Screens/LuxuryWatches.dart';
 import 'package:watch_spot/Screens/smart_watches.dart';
 
 class Explore extends StatefulWidget {
@@ -50,7 +51,12 @@ class _ExploreState extends State<Explore> {
         ),
         Container(
           child: TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => luxury_watches()),
+              );
+            },
             child: Image.asset("assets/images/LuxuryWatches.png"),
             style: TextButton.styleFrom(maximumSize: Size(600, 800)),
           ),
