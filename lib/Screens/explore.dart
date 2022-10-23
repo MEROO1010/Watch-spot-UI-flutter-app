@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watch_spot/Screens/smart_watches.dart';
 
 class Explore extends StatefulWidget {
   const Explore({super.key});
@@ -35,12 +36,41 @@ class _ExploreState extends State<Explore> {
               width: 340,
             )),
         Container(
-          child: ElevatedButton(
-            onPressed: () {},
-            child: Image.asset('assets/images/SmartWatches.png'),
-            style: ButtonStyle(),
+          child: TextButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => smartWatches()),
+              );
+            },
+            child: Image.asset("assets/images/SmartWatches.png"),
+            style: TextButton.styleFrom(maximumSize: Size(600, 800)),
           ),
-          margin: EdgeInsets.fromLTRB(10, 160, 0, 0),
+          padding: EdgeInsets.only(left: 20, top: 138),
+        ),
+        Container(
+          child: TextButton(
+            onPressed: () {},
+            child: Image.asset("assets/images/LuxuryWatches.png"),
+            style: TextButton.styleFrom(maximumSize: Size(600, 800)),
+          ),
+          padding: EdgeInsets.only(left: 20, top: 300),
+        ),
+        Container(
+          child: TextButton(
+            onPressed: () {},
+            child: Image.asset("assets/images/QuartzWatches.png"),
+            style: TextButton.styleFrom(maximumSize: Size(600, 800)),
+          ),
+          padding: EdgeInsets.only(left: 20, top: 460),
+        ),
+        Container(
+          child: TextButton(
+            onPressed: () {},
+            child: Image.asset("assets/images/AnaloguesWatches.png"),
+            style: TextButton.styleFrom(maximumSize: Size(600, 800)),
+          ),
+          padding: EdgeInsets.only(left: 20, top: 620),
         )
       ],
     );

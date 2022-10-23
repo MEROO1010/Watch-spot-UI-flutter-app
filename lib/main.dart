@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
 import 'package:watch_spot/Screens/explore.dart';
+import 'package:watch_spot/Screens/smart_watches.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -8,6 +9,7 @@ void main() {
     routes: {
       '/': (context) => GetStart(),
       '/explore': (context) => Explore(),
+      '/smart_watches': (context) => smartWatches(),
     },
   ));
 }
